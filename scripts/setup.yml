@@ -64,10 +64,7 @@
 
   - name: Install packages (Rocky)
     dnf:
-      name: "{{ packages }}"
-      state: latest
-    vars:
-      packages:
+      name: 
       - bash-completion
       - curl
       - git
@@ -76,14 +73,12 @@
       - tcpdump
       - vim
       - wget
+      state: latest      
     when: ansible_os_family == "Rocky"
 
   - name: Install dependencies for VirtualBox Guest Additions (Rocky)
     dnf:
-      name: "{{ packages }}"
-      state: latest
-    vars:
-      packages:
+      name: 
       - bzip2
       - dkms
       - kernel-devel
@@ -91,6 +86,7 @@
       - gcc
       - make
       - perl
+      state: latest
     when:
       - ansible_os_family == "Rocky"
       - ansible_virtualization_type == "virtualbox"
