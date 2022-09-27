@@ -66,4 +66,4 @@ The default credentials for this VM image are:
 
 ## Credit
 
-Original work created by @eaksel
+Original work created by [@eaksel](https://github.com/eaksel)
