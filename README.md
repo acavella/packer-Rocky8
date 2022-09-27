@@ -63,3 +63,7 @@ The default credentials for this VM image are:
 |--------|--------|
 |packer|packer|
 |root|packer|
+
+## Credit
+
+Original work created by @eaksel
