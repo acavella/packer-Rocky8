@@ -35,14 +35,14 @@ packer build -only=virtualbox-iso rocky8_uefi.json
 
 *If you omit the keyword "-only=" both the Workstation and Virtualbox VMs will be created.*
 
-By default the .iso of Rocky Linux 8 is pulled from <https://download.rockylinux.org/pub/rocky/8.3/isos/x86_64/Rocky-8.3-x86_64-boot.iso>
+By default the .iso of Rocky Linux 8 is pulled from <https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-minimal.iso>
 
 You can change the URL to one closer to your build server. To do so change the **"iso_url"** parameter in the **"variables"** section of the rocky8.json file.
 
 ```json
 {
   "variables": {
-      "iso_url": "https://download.rockylinux.org/pub/rocky/8.3/isos/x86_64/Rocky-8.3-x86_64-boot.iso"
+      "iso_url": "https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-minimal.iso"
 }
 ```
 
